@@ -1,0 +1,39 @@
+{
+  "name": "tradrrr-unify",
+  "version": "0.0.1",
+  "homepage": "https://github.com/xxx/xxx#readme",
+  "repository": "git@bitbucket.org:tradrrr/tradrrr-unify.git",
+  "types": "build/xxx.d.ts",
+  "description": "Unify different platform's API data",
+  "main": "index.js",
+  "type": "index.d.ts",
+  "scripts": {
+    "test": "npx jest --coverage",
+    "test:manual": "cd test/manual; npm start",
+    "build": "ts-node build.script.ts",
+    "pub": "npm version patch && npm publish --access public",
+    "build_and_pub": "npm run build && npm run pub"
+  },
+  "author": "Mosteast team",
+  "license": "ISC",
+  "dependencies": {
+    "@bithana/general-exception": "^1.1.5",
+    "@types/axios": "^0.14.0",
+    "@types/bignumber.js": "^5.0.0",
+    "@types/lodash": "^4.14.136",
+    "axios": "^0.19.0",
+    "bignumber.js": "^9.0.0",
+    "browser-or-node": "^1.2.1",
+    "coinbase-pro": "^0.9.0",
+    "lodash": "^4.17.15",
+    "ws": "^7.1.1"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.11",
+    "@types/node": "^11.13.4",
+    "jest": "^24.7.1",
+    "shelljs": "^0.8.3",
+    "ts-jest": "^24.0.2",
+    "typescript": "^3.4.3"
+  }
+}
